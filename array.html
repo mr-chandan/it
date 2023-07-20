@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Methods</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var states = new Array("KARNATAKA", "MP");
+        document.write("<h1>PROGRAM TO DEMONSTRATE ARRAY METHODS</h1>");
+        document.write("<hr/>");
+        document.write("<b>Array initially </b><br/>" + states);
+
+        states.push("TAMILNADU");
+        document.write("<br/><br/><b>Array after adding </b> <br/>" + states);
+
+        states.unshift("ANDHRA PRADESH");
+        document.write("<br/><br/><b>Array after inserting element at the beginning </b><br/>" + states);
+
+        states.sort();
+        document.write("<br/><br/><b>Array after sorting</b> <br/> " + states);
+
+        states.reverse();
+        document.write("<br/><br/><b>Array after reverse</b> <br/>" + states);
+
+        var newarr = states.slice(2, 4);
+        document.write("<br/><br/><b>Sliced Array (from 2 to 6)</b><br/>" + newarr);
+
+        var concatstr = states.join("*");
+        document.write("<br/><br/><b>Concatenated array String</b> <br/> " + concatstr);
+
+        var newarr = states.concat("KASHMIR", "MAHARASHTRA");
+        document.write("<br/><br/><b>New Concatenated Array </b><br/>" + newarr);
+
+        states.pop();
+        states.shift();
+        document.write("<br/><br/><b>Array after removing first and last element</b> <br/> " + states);
+    </script>
+</body>
+</html>
