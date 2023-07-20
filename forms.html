@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body bgcolor="#CEE6F3" text="blue">
+    <h1>
+        <center>Registration Form</center>
+    </h1>
+    <form action="">
+
+        <div>Enter your email id:
+            <input type="email" name="myname" size="30" maxlength="50" required />
+        </div>
+
+        <div>Enter the password:
+            <input type="password" name="mypass" size="20" maxlength="20" required />
+        </div>
+
+        <div>
+            Sex:
+            <label><input type="radio" name="gender" value="male" required>Male</label>
+            <label><input type="radio" name="gender" value="female" required />Female</label>
+        </div>
+
+
+
+        <div>
+            <div>Which of the following Accounts do you have?</div>
+            <label><input type="checkbox" name="account" value="Gmail" />Gmail</label>
+            <label><input type="checkbox" name="account" value="Facebook" />Facebook</label>
+            <label><input type="checkbox" name="account" value="Twitter" />Twitter</label>
+            <label><input type="checkbox" name="account" value="Google+" />Google+</label>
+        </div>
+
+
+        <div>
+            <div>Any Suggestions?</div>
+            <textarea name="feedback" rows="5" cols="50"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SUM OF N NUMBERS</title>
+    <script>
+        function sum() {
+            var n, s, response;
+            n = prompt("Enter a positive integer");
+            n = parseInt(n);
+            s = 0;
+            for (var i = 1; i <= n; i++)
+                s = s + i;
+            alert("Sum of numbers up to " + n + " is: " + s);
+            response = confirm("Are you happy with the output?");
+        }
+    </script>
+</head>
+
+<body>
+    <h1 align="center">SUM OF N NUMBERS</h1>
+    <input type="button" value="Calculate Sum" onclick="sum();" />
+</body>
+
+</html>
